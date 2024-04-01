@@ -10,10 +10,10 @@ export default function Header() {
         }
     }
   return (
-    <div className='sticky top-0 whitespace-nowrap flex space-x-10 justify-center mx-auto max-w-6xl'>
+    <div className='sticky top-0 whitespace-nowrap w-full flex space-x-10 justify-center mx-auto max-w-6xl'>
         <header className='flex mt-1'>
-            <div className='cursor-pointer flex space-x-1 mx-auto absolute left-1 mt-4' onClick={()=>navigate('/')}>
-                <img src='./favicon.ico' alt='' className='h-7' />
+            <div className='cursor-pointer flex space-x-1 mx-auto mt-4' onClick={()=>navigate('/')}>
+                <img src='./favicon.ico' alt='logo' className='h-7 border-black' />
                 <h1 className='text-bold'>Developer Emman</h1>
             </div>
             <div>
@@ -26,8 +26,8 @@ export default function Header() {
                     <li className={`cursor-pointer font-white ${pathMatchRoute("/contact") && "text-black border-b-black border-b-[3px]"}`} onClick = {()=>navigate("/contact")}>Contact</li>
                 </ul>
             </div>
-            <div className=''>
-                <button className='text-black border-spacing-3 ml-40 border-rounded cursor-pointer border-black bprder-[3px] bg-black text-white rounded pl-3 pr-3 pt-3 pb-3 hover:bg-white hover:text-black'>Download CV</button>
+            <div className='pt-2'>
+                <button className='text-black border-2 ml-40 rounded cursor-pointer border-black bprder-[3px] bg-black text-white rounded pl-2 pr-2 pt-2 pb-2 hover:bg-white hover:text-black'>Download CV</button>
             </div>
         </header>
     </div>
