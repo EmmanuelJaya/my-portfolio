@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-export default function About() {
+const AboutPage = () => {
   return (
-    <div>About</div>
-  )
+    <div className="about-container">
+      <FontAwesomeIcon icon={faTwitter} size="3x" className="twitter-icon" />
+    </div>
+  );
 }
+
+export default AboutPage;

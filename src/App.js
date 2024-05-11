@@ -1,25 +1,29 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import Home from "./pages/Home"; 
-import About from "./pages/About";
-import Education from "./pages/Education";
-import Skills from "./pages/Skills";
-import Project from "./pages/Project";
-import Contact from "./pages/Contact";
-import Header from "./components/Header";
+// App.js
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import About from './pages/About';
+import Education from './pages/Education';
+import Skills from './pages/Skills';
+import Project from './pages/Project';
+import Contact from './pages/Contact';
+
 function App() {
   return (
     <>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/education" element={<Education/>} />
-        <Route path="/skills" element={<Skills/>} />
-        <Route path="/project" element={<Project/>} />
-        <Route path="/contact" element={<Contact/>} />
-      </Routes>
-    </Router>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </>
   );
 }
